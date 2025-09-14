@@ -1,0 +1,72 @@
+.title {
+  margin-bottom: 16px;
+  font-size: var(--font-size-lg);
+}
+
+.stock-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stock-list::-webkit-scrollbar {
+  display: none;
+}
+
+.stock-wrapper {
+  flex: 0 0 136px;
+  height: 148px;
+  border: 1px solid var(--color-border-secondary);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+
+  .company-logo {
+    height: 22px;
+  }
+  .stock {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary-black);
+    border-radius: 16px;
+    padding: 4px 6px;
+    font-weight: var(--font-weight-black);
+    line-height: 1;
+    height: 18px;
+    p {
+      font-size: var(--font-size-xs);
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.company-name-capitalized {
+  font-size: var(--font-size-base-sm);
+  text-transform: capitalize;
+  color: var(--color-text-gray);
+  font-weight: var(--font-weight-black);
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.company-name {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-gray);
+  font-weight: var(--font-weight-medium);
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.price {
+  font-size: var(--font-size-base);
+  color: var(--color-text-primar);
+  font-weight: var(--font-weight-black);
+}

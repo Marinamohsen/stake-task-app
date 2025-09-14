@@ -1,0 +1,52 @@
+.change {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-extrabold);
+    width: 5rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+ion-title {
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+    padding-left: 0 !important;
+}
+
+ion-col {
+    padding: 0;
+}
+
+ion-grid {
+    padding: 0;
+}
+
+.price {
+    font-size: var(--font-size-md-sm);
+}
+
+.stock-details {
+    .stock-name {
+        font-size: var(--font-size-base-sm);
+        padding-bottom: 4px;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+    .stock-shares {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+.table-content {
+    display: flex;
+    align-items: center;
+}
+
+.table-header {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+}

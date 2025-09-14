@@ -1,0 +1,18 @@
+<ion-header class="no-shadow">
+  <ion-title class="page-title">Dashboard</ion-title>
+</ion-header>
+
+<ion-content>
+  <div class="equity-wrapper">
+    <p class="small-text">Total equity</p>
+    <p class="amount">${{TotalHoldings | number:'1.0-2'}}</p>
+  </div>
+
+  <div class="holdings-wrapper">
+    <app-holdings-stocks [stocks]="stocks"></app-holdings-stocks>
+  </div>
+
+  <div class="trending-stocks">
+    <app-trending-stocks (refreshHoldings)="getStocksList()"></app-trending-stocks>
+  </div>
+</ion-content>

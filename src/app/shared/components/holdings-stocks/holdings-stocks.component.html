@@ -1,0 +1,33 @@
+<div *ngIf="stocks?.length">
+  <h3 class="title">Holdings</h3>
+
+
+  <ion-grid>
+    <ion-row class="table-header">
+      <ion-col size="7">Stock</ion-col>
+      <ion-col>Price</ion-col>
+      <ion-col>Change</ion-col>
+    </ion-row>
+    <ion-row class="table-content" *ngFor="let stock of stocks.slice(0, 4)" (click)="openModal(stock)">
+      <ion-col size="7">
+        <span class="stock-details">
+          <p class="stock-name">{{ stock.symbol }}</p>
+          <p class="stock-shares">
+            {{ stock.holdingShares?.toFixed(4) }} shares
+          </p>
+        </span>
+      </ion-col>
+      <ion-col>
+        <p class="price">${{ stock.holdingsAmount }}</p>
+      </ion-col>
+      <ion-col>
+        <span class="change" [ngClass]="{
+            positive: stock.change >= 0,
+            negative: stock.change < 0
+          }">
+          {{ stock.change >= 0 ? "+" : "" }}{{ stock.change }}%
+        </span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

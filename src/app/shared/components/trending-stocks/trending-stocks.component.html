@@ -1,0 +1,24 @@
+<h3 class="title">Trending stocks</h3>
+
+<div class="stock-list">
+  <div
+    class="stock-wrapper"
+    *ngFor="let stock of stocks"
+    (click)="openModal(stock)"
+  >
+    <span class="stock-header">
+      <img
+        [src]="stock.logo"
+        class="company-logo"
+        alt="{{ stock.companyName }}"
+      />
+      <span class="stock">
+        <p>stock</p>
+      </span>
+    </span>
+
+    <p class="company-name-capitalized">{{ stock.symbol }}</p>
+    <p class="company-name">{{ stock.companyName }}</p>
+    <p class="price">${{ stock.price }}</p>
+  </div>
+</div>

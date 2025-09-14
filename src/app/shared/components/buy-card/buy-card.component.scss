@@ -1,0 +1,118 @@
+ul {
+  padding: 0;
+  margin: 1rem;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+p {
+  margin: 3px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.company-price {
+  font-size: 13px;
+}
+
+.contain {
+  --border-radius: 12px;
+  --backdrop-opacity: 0.6;
+  padding: 0;
+  height: 100%;
+}
+
+.custom-input {
+  --border-radius: 4px;
+  --border-width: 1.5px;
+  --border-color: var(--color-text-gray);
+  --placeholder-color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.custom-input ion-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.custom-input input {
+  font-size: var(--font-size-md-sm);
+  color: var(--color-text-primary);
+  padding: 7.5px 0;
+}
+
+.non-editable ion-input {
+  pointer-events: none;
+}
+
+.swipe-btn {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 30px;
+  background: var(--color-border-secondary);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe-btn.disabled .swipe-thumb {
+  cursor: not-allowed;
+  background: var(--color-background);
+  pointer-events: none;
+}
+
+.swipe-btn.disabled .swipe-text {
+  color: var(--color-text-disabled-primary);
+}
+
+.swipe-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-text-primary);
+}
+
+.swipe-thumb {
+  position: absolute;
+  left: 2px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-background);
+  font-size: var(--font-size-heading);
+  background: var(--color-background);
+  cursor: grab;
+  transition: left 0.2s ease;
+}
+
+.swipe-text {
+  font-size: var(--font-size-base-sm);
+  color: var(--color-background);
+  z-index: 1;
+}
+
+.custom-toast {
+  --background: #22b692;
+  --color: #fff;
+  --border-radius: 12px;
+  --top: env(safe-area-inset-top);
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --z-index: 99999;
+}

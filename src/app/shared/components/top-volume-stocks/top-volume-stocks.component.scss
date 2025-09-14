@@ -1,0 +1,78 @@
+.stock-wrapper {
+  flex: 0 0 136px;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #e3e3e3;
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+
+  .company-logo {
+    height: 32px;
+  }
+  .stock {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 16px;
+    padding: 4px 6px;
+    font-weight: 800;
+    line-height: 1;
+    height: 18px;
+    p {
+      font-size: 10px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.company-name-wrapper {
+  display: flex;
+  align-items: center;
+  color: #7e7e7e;
+  p {
+    margin: 0;
+    padding: 0 5px;
+    font-size: 14px;
+  }
+}
+
+.company-name-capitalized {
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 16px;
+  color: #141414;
+  font-weight: 800;
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
+  margin: 16px 0;
+}
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-details {
+  display: flex;
+  align-items: center;
+  ion-icon {
+    width: 18px;
+    height: 18px;
+  }
+  p {
+    color: #434343;
+    font-size: 13px;
+    margin: 0;
+  }
+}

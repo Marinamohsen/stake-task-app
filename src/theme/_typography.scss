@@ -1,0 +1,32 @@
+//  Typography
+
+@font-face {
+  font-family: "Universal Sans";
+  src: url("../assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  //fonts
+  --font-family-base: "Universal Sans";
+  --font-family-heading: "Universal Sans";
+  // Sizes
+
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md-sm: 13px;
+  --font-size-base-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-heading: 22px;
+  --font-size-heading-xl: 28px;
+  //weight
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-extrabold: 700;
+  --font-weight-black: 800;
+}

@@ -1,0 +1,31 @@
+.page-title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+  padding: 20px 0px;
+}
+
+.equity-wrapper {
+  margin-bottom: 40px;
+}
+
+.small-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-black);
+  padding: 4px 0;
+  margin: 0;
+}
+
+.holdings-wrapper {
+  margin-bottom: 40px;
+}
+
+.amount {
+  font-size: var(--font-size-heading-xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-text-primary);
+  padding: 4px 0;
+  margin: 0;
+}

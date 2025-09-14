@@ -1,0 +1,97 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "./theme/variables.scss";
+
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+// @import "@ionic/angular/css/palettes/dark.system.css";
+
+ion-app {
+  background-color: #fff; /* your color */
+}
+
+html,
+body,
+ion-app,
+ion-content {
+  font-family: var(--font-family-base) !important;
+}
+
+// html.md {
+//     --ion-default-font: var(--font-family-base);
+// }
+.no-shadow.header-md {
+  box-shadow: none !important;
+}
+.title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.searchbar-has-value.searchbar-should-show-clear.sc-ion-searchbar-md-h .searchbar-clear-button.sc-ion-searchbar-md {
+  display: none !important;
+}
+.focused {
+  --background: none !important;
+  .searchbar-input.sc-ion-searchbar-md {
+    border: 1px solid #ccc;
+  }
+}
+
+.ion-page {
+  padding: 24px;
+}
+
+.scroll-y {
+  overflow-y: scroll !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-y::-webkit-scrollbar {
+  display: none !important;
+}
+
+.floating-modal {
+  --backdrop-opacity: 0.4;
+  --border-radius: 20px;
+  --box-shadow: 0 4px 16px #00000040;
+  --width: 90%;
+  --height: 340px;
+  --max-width: 400px;
+  --max-height: 80%;
+  margin: auto;
+}

@@ -1,0 +1,36 @@
+<ion-header class="no-shadow">
+  <ion-searchbar [(ngModel)]="searchTerm" (keyup)="onSearch()" (ionFocus)="isFocused = true" placeholder="Search stocks"
+    [ngClass]="isFocused?'focused':'unfocused'" class="custom-search"></ion-searchbar>
+  <ion-button fill="clear" slot="end" *ngIf="isFocused" (click)="onCancelSearch()">
+    Cancel
+  </ion-button>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!searchTerm && !isFocused" class="search-history">
+    <h3 class="title">Recently Searched</h3>
+
+    <ul>
+      <li *ngFor="let company of searchHistory.slice(0,5)" (click)="openModal(company)">
+        <span class="search-history-element">
+          <span class="search-details">
+            <p class="company-name">{{ company.symbol }}</p>
+            <p class="company-shares">{{ company.shares }} shares</p>
+          </span>
+          <p class="company-price">${{ company.price }}</p>
+        </span>
+      </li>
+    </ul>
+
+    <app-top-volume-stocks></app-top-volume-stocks>
+  </div>
+
+  <li *ngFor="let stockItem of filteredStocks" (click)="openModal(stockItem)">
+    <span class="search-history-element">
+      <span class="search-details">
+        <p class="company-name">{{ stockItem.symbol }}</p>
+        <p class="company-full-name">{{ stockItem.companyName }}</p>
+      </span>
+    </span>
+  </li>
+</ion-content>

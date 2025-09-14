@@ -1,0 +1,157 @@
+ion-searchbar {
+  --box-shadow: none;
+  --background: var(--color-background-secondary);
+  --border-radius: 32px;
+  padding: 10px 0;
+}
+
+.custom-search {
+  --placeholder-font-size: var(-font-size-base-sm);
+}
+
+.title {
+  margin: 24px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.search-history {
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+.search-history-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.company-price {
+  font-size: var(--font-size-md-sm);
+}
+
+.search-details {
+  .company-symbol {
+    font-size: var(--font-size-base-sm);
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--color-text-primary);
+  }
+  .company-name {
+    font-size: var(--font-size-base-sm);
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--color-text-primary);
+  }
+  .company-full-name {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+  .company-shares {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+ion-modal.half-modal {
+  --height: 62%;
+  --border-radius: 12px;
+  --backdrop-opacity: 0.6;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.swipe-btn {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 56px;
+  margin: 20px auto;
+  border-radius: 30px;
+  background: var(--color-border-secondary);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-text-primary);
+}
+
+.swipe-thumb {
+  position: absolute;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-background);
+  font-size: var(--font-size-heading);
+  cursor: grab;
+  transition: left 0.2s ease;
+}
+
+.swipe-text {
+  font-size: var(--font-size-base-sm);
+  color: var(--color-text-gray);
+  z-index: 1;
+}
+
+p {
+  margin: 3px;
+}
+
+.custom-input {
+  --background: transparent;
+  --border-radius: 4px;
+  --border-width: 1.5px;
+  --border-color: var(--color-text-gray);
+  --placeholder-color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.custom-input ion-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.custom-input input {
+  font-size: var(-font-size-md-sm);
+  color: var(--color-text-primary);
+  padding: 7.5px 0;
+}
+
+.non-editable ion-input {
+  pointer-events: none;
+}
+
+.no-shadow {
+  display: flex;
+  ion-button {
+    color: var(--color-text-primary);
+    text-transform: none !important;
+    font-family: var(--font-family-base);
+    margin: 0;
+  }
+}

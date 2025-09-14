@@ -1,0 +1,28 @@
+<div class="contain">
+  <h2>{{ selectedStock.symbol }} {{ selectedStock.price }}</h2>
+
+  <ion-content>
+    <form [formGroup]="investmentForm">
+      <ion-input label="Price" labelPlacement="stacked" formControlName="price" class="custom-input" readonly>
+      </ion-input>
+
+      <ion-input label="Amount" labelPlacement="stacked" formControlName="amount" type="number" min="0"
+        class="custom-input"></ion-input>
+
+      <ion-input label="Shares" labelPlacement="stacked" formControlName="shares" type="number" min="0"
+        class="custom-input"></ion-input>
+    </form>
+
+    <div class="swipe-btn" [class.disabled]="!canSwipe">
+      <div class="swipe-track">
+        <div #thumb class="swipe-thumb" [class.disabled]="!canSwipe">
+          <ion-icon name="arrow-forward-outline" src="../../../assets/icon/arrow.svg"></ion-icon>
+        </div>
+        <span class="swipe-text">Swipe to Confirm</span>
+      </div>
+    </div>
+  </ion-content>
+</div>
+
+
+<ion-toast #toast message="'Purchased Successfuly!'" duration="3000" position="top" cssClass="custom-toast"></ion-toast>

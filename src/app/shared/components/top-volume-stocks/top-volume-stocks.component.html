@@ -1,0 +1,44 @@
+<h3 class="title">Trending stocks</h3>
+
+<div class="stock-wrapper" *ngFor="let stock of stocks" (click)="openModal(stock)">
+  <span class=" stock-header">
+    <img [src]="stock.logo" class="company-logo" alt="{{ stock.companyName }}">
+    <span class="stock">
+      <p>stock</p>
+    </span>
+  </span>
+
+  <p class="price">${{ stock.price }}</p>
+  <span class="company-name-wrapper">
+    <p class="company-name-capitalized">{{ stock.symbol }}</p> • <p class="company-name">{{ stock.companyName }}</p>
+  </span>
+  <div class="horizontal-line"></div>
+  <div class="details-wrapper">
+
+    <span class="amount-details">
+      <!-- market price -->
+
+      <ion-icon src="../../../../assets/icon/circle-dollar.svg"></ion-icon>
+      <p>${{stock.change}}m</p>
+    </span>
+
+    <span class="amount-details">
+      <!-- volume -->
+
+      <ion-icon src="../../../../assets/icon/target.svg"></ion-icon>
+      <p>${{stock.volume | abbreviateNumber }}</p>
+    </span>
+
+    <!-- price -->
+
+    <span class="amount-details">
+      <ion-icon src="../../../../assets/icon/square-dollar.svg"></ion-icon>
+      <p>$ {{stock.priceChange}}</p>
+    </span>
+  </div>
+
+
+
+
+
+</div>
